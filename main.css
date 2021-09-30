@@ -1,0 +1,177 @@
+* {
+
+    margin: 0;
+  
+    padding: 0;
+  
+    border: 0;
+  
+    box-sizing: border-box;
+  
+  }
+  
+  
+  
+  html,
+  
+  body {
+  
+    height: 100vh;
+  
+    width: 100vw;
+  
+    overflow: hidden;
+  
+  }
+  
+  
+  
+  body {
+  
+    --bgColor: #e0e0e0;
+  
+    --borderColor: #727272;
+  
+    --statsBgColor: white;
+  
+    background: var(--bgColor);
+  
+  
+  
+    display: grid;
+  
+    place-items: center;
+  
+  
+  
+    /* display:flex;
+  
+    align-items: center;
+  
+    justify-content: center; */
+  
+  }
+  
+  
+  
+  .container {
+  
+    width: 80vw;
+  
+    height: 50vh;
+  
+  
+  
+    /* position: absolute;
+  
+  left: 50%;
+  
+  top: 50%;
+  
+  margin-left: translateX(-50%);
+  
+  margin-top: translateY(-50%); */
+  
+  
+  
+    background: rgb(126, 126, 126);
+  
+    border: 10px solid var(--borderColor);
+  
+    border-radius: 20px;
+  
+    padding: 10vh 20vw;
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    justify-content: center;
+  
+  }
+  
+  
+  
+  .info {
+  
+    display: flex;
+  
+    justify-content: space-between;
+  
+    font-size: 20px;
+  
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  
+  .title {
+  
+    display: flex;
+  
+    font-weight: 900;
+  
+    gap: 10px;
+  
+  }
+  
+  
+  
+  .title div {
+  
+    color: rgb(56, 56, 56);
+  
+  }
+  
+  
+  
+  .stats {
+  
+    display: grid;
+  
+    grid-template-columns: 1fr 1fr 1fr;
+  
+    gap: 20px;
+  
+    padding-top: 20px;
+  
+  }
+  
+  
+  
+  .stats > div {
+  
+    text-align: center;
+  
+    box-shadow: 0 0 4px rgb(184, 184, 184);
+  
+    padding: 20px;
+  
+    border-radius: 10px;
+  
+    background-color: var(--statsBgColor);
+  
+  }
+  
+  
+  
+  #date {
+  
+  }
+  
+  #countryName {
+  
+  }
+  
+  #confirmed {
+  
+  }
+  
+  #recovered {
+  
+  }
+  
+  #deaths {
+  
+  }
+  
+  
