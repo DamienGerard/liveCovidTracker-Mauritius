@@ -1,177 +1,105 @@
 * {
-
     margin: 0;
-  
     padding: 0;
-  
     border: 0;
-  
     box-sizing: border-box;
-  
-  }
-  
-  
-  
-  html,
-  
-  body {
-  
+}
+
+html,
+body {
     height: 100vh;
-  
     width: 100vw;
-  
     overflow: hidden;
-  
-  }
-  
-  
-  
-  body {
-  
-    --bgColor: #0060f0;
-  
-    --borderColor: #ffadda;
-  
+}
+
+body {
+    --bgColor: #ebebeb;
+    --borderColor: #000000;
     --statsBgColor: white;
-  
     background: var(--bgColor);
-  
-  
-  
     display: grid;
-  
     place-items: center;
-  
-  
-  
-    /* display:flex;
-  
-    align-items: center;
-  
-    justify-content: center; */
-  
-  }
-  
-  
-  
-  .container {
-  
-    width: 80vw;
-  
-    height: 50vh;
-  
-  
-  
-    /* position: absolute;
-  
-  left: 50%;
-  
-  top: 50%;
-  
-  margin-left: translateX(-50%);
-  
-  margin-top: translateY(-50%); */
-  
-  
-  
-    background: rgb(126, 126, 126);
-  
-    border: 10px solid var(--borderColor);
-  
-    border-radius: 20px;
-  
-    padding: 10vh 20vw;
-  
     display: flex;
-  
-    flex-direction: column;
-  
+    flex-direction: row;
     justify-content: center;
-  
-  }
-  
-  
-  
-  .info {
-  
+}
+
+.container {
+    width: 80vw;
+    height: 50vh;
+    background: rgb(218, 216, 216);
+    /* border: 10px solid var(--borderColor); */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10vh 10vw;
     display: flex;
-  
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
     justify-content: space-between;
-  
     font-size: 20px;
-  
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  
-  }
-  
-  .title {
-  
+}
+
+.title {
     display: flex;
-  
     font-weight: 900;
-  
     gap: 10px;
-  
-  }
-  
-  
-  
-  .title div {
-  
+}
+
+.title div {
     color: rgb(56, 56, 56);
-  
-  }
-  
-  
-  
-  .stats {
-  
+}
+
+.stats {
     display: grid;
-  
     grid-template-columns: 1fr 1fr 1fr;
-  
     gap: 20px;
-  
     padding-top: 20px;
-  
-  }
-  
-  
-  
-  .stats > div {
-  
+}
+
+.stats>div {
     text-align: center;
-  
     box-shadow: 0 0 4px rgb(184, 184, 184);
-  
     padding: 20px;
-  
     border-radius: 10px;
-  
     background-color: var(--statsBgColor);
-  
-  }
-  
-  
-  
-  #date {
-  
-  }
-  
-  #countryName {
-  
-  }
-  
-  #confirmed {
-  
-  }
-  
-  #recovered {
-  
-  }
-  
-  #deaths {
-  
-  }
-  
-  
+}
+
+#countryListContainer {
+    height: 50vh;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#countryListContainer .title {
+    padding: 1rem;
+    background-color: bisque;
+}
+
+#countryList {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.countryListItem {
+    padding: 0.5rem;
+    margin: 2px 0px;
+    border: 1px solid rgba(14, 1, 26, 0.452);
+    background-color: #ededed;
+}
+
+.countryListItem:hover {
+    background-color: #eded99;
+    cursor: pointer;
+}
+
+.countryListItem.activate {
+    background-color: crimson;
+    color: #fff;
+}
